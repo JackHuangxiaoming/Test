@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ABC 掌银 Scheme 探测</title>
+<style>
+  body{font-family:-apple-system,sans-serif;padding:18px;background:#f5f5f5;color:#333;margin:0}
+  h2{margin:0 0 6px;color:#1890ff}
+  p{color:#666;font-size:13px;margin:6px 0 16px}
+  ul{list-style:none;padding:0;margin:0}
+  li{margin:8px 0}
+  a{display:block;padding:14px;background:#fff;color:#1890ff;
+     text-decoration:none;border-radius:8px;border:1px solid #d9d9d9;
+     font-family:monospace;font-size:14px;word-break:break-all}
+  a:active{background:#e6f7ff}
+  .ok{margin-top:20px;padding:12px;background:#fffbe6;border:1px solid #ffe58f;
+       border-radius:6px;font-size:13px;color:#7a5800}
+</style></head><body>
+<h2>农行掌银 Scheme 探测</h2>
+<p>依次点击下面每个按钮,能弹"<b>在'掌上银行'中打开?</b>"的就是正确 scheme。把结果告诉脚本作者。</p>
+<ul>
+<li><a href="cnabc://pay?TOKEN=PROBE12345">cnabc://pay?...</a></li>
+<li><a href="abcmobile://pay?TOKEN=PROBE12345">abcmobile://pay?...</a></li>
+<li><a href="abcMobile://pay?TOKEN=PROBE12345">abcMobile://pay?...</a></li>
+<li><a href="abcMobileBank://pay?TOKEN=PROBE12345">abcMobileBank://pay?...</a></li>
+<li><a href="abcmobilebank://pay?TOKEN=PROBE12345">abcmobilebank://pay?...</a></li>
+<li><a href="agriculturalbankofchina://pay?TOKEN=PROBE12345">agriculturalbankofchina://pay?...</a></li>
+<li><a href="bankabc://pay?TOKEN=PROBE12345">bankabc://pay?...</a></li>
+<li><a href="abc://pay?TOKEN=PROBE12345">abc://pay?...</a></li>
+<li><a href="ABC://pay?TOKEN=PROBE12345">ABC://pay?...</a></li>
+<li><a href="abccmb://pay?TOKEN=PROBE12345">abccmb://pay?...</a></li>
+<li><a href="abcEbus://pay?TOKEN=PROBE12345">abcEbus://pay?...</a></li>
+<li><a href="abcEbusiness://pay?TOKEN=PROBE12345">abcEbusiness://pay?...</a></li>
+<li><a href="ABCMobile://pay?TOKEN=PROBE12345">ABCMobile://pay?...</a></li>
+<li><a href="boa-abc://pay?TOKEN=PROBE12345">boa-abc://pay?...</a></li>
+<li><a href="nh99://pay?TOKEN=PROBE12345">nh99://pay?...</a></li>
+<li><a href="comabcMobile://pay?TOKEN=PROBE12345">comabcMobile://pay?...</a></li>
+<li><a href="mbsf://pay?TOKEN=PROBE12345">mbsf://pay?...</a></li>
+<li><a href="cnabchina://pay?TOKEN=PROBE12345">cnabchina://pay?...</a></li>
+</ul>
+<div class="ok">
+  注意: 已安装农行掌银 iOS APP 才有意义。<br>
+  弹"无法打开应用" / 没反应 → 这个 scheme 错。
+</div>
+</body></html>
